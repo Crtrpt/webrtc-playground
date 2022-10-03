@@ -1,0 +1,20 @@
+{
+  "name": "mqtt.webrtc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start_mqtt":"cd broker/cmd && go build -o mqtt.exe && mqtt"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "mqtt": "^4.3.7",
+    "precompiled-mqtt": "^4.3.14-beta"
+  }
+}

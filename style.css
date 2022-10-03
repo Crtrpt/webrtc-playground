@@ -1,0 +1,21 @@
+#localVideo {
+    border: 1px solid red;
+}
+#remoteVideo {
+    border:1px solid blue;
+}
+#chat {
+    flex-grow: 1;
+    border:1px solid green;
+    height: 200px;
+}
+#log {
+    flex-grow: 1;
+    border:1px solid gray;
+    height: 200px;
+    overflow: auto;
+}
+#arena {
+    display: flex;
+    height: 200px;
+}

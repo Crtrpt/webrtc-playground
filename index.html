@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC</title>
+  </head>
+  <body>
+    <div id="arena">
+      <video id="localVideo" playsinline autoplay muted></video>
+      <video id="remoteVideo" playsinline autoplay></video>
+      <div id="chat">文本消息</div>
+      <div id="log">日志消息</div>
+    </div>
+   
+
+    <div class="room">
+      <input value="" placeholder="房间号" id="room"><br>
+      <input value="" placeholder="我的名称" id="username"><br>
+      <button id="join">加入</button>
+      <button id="level">离开</button>
+    </div>
+
+    <div class="box">
+        <button id="start">开始</button>
+        <button id="hangup">挂起</button>
+    </div>
+    <div id="app"></div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
